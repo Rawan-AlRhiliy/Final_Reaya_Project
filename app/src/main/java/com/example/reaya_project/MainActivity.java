@@ -10,12 +10,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< Updated upstream
         setContentView(R.layout.activity_logo);
-=======
-        setContentView(R.layout.activity_sign_in);
-        EditText username = findViewById(R.id.mass);
-        
->>>>>>> Stashed changes
+
     }
 }
