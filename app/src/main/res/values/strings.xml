@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Reaya_Project</string>
+    <string name="hint_National">National ID/Iqama</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_Reporting">Reporting</string>
+    <string name="hint_mass">Write your message</string>
+    <string name="hint_Search">Search here</string>
+    <string name="hint_Phone">Phone number</string>
+    <string name="hint_Name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_Birthday">Birthday</string>
+    <string name="hint_Gender">Gender</string>
+    <string name="hint_City">City</string>
+    <string name="hint_Address">Address</string>
+    <string name="hint_Confirm">Confirm password</string>
+    <string name="hint_Relative">Relative relation</string>
+
+    <string-array name="reporting">
+        <item>help</item>
+        <item>suggestion</item>
+        <item>problem</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

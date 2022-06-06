@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearGroup101"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_50"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_goneMarginEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearGroup99"
+            android:layout_width="329dp"
+            android:layout_height="452dp"
+            android:layout_margin="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300px"
+            android:layout_marginEnd="-10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="299dp"
+                android:layout_height="114dp"
+                android:layout_marginTop="6px"
+                android:layout_marginRight="70px"
+                app:srcCompat="@drawable/img_microsoftteams" />
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="120px"
+                android:layout_marginEnd="20px"
+                android:layout_marginBottom="50px"
+                android:gravity="center_horizontal"
+                android:text="Contact Us"
+                android:textColor="@color/bluegray_900"
+                android:textSize="22sp" />
+
+            <Spinner
+                android:id="@+id/report"
+                android:layout_width="277dp"
+                android:layout_height="41dp"
+                android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+                android:entries="@array/reporting"
+                android:prompt="@string/hint_Reporting"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@id/txtContact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/mass"
+                android:layout_width="284dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="17px"
+                android:layout_marginTop="95px"
+                android:layout_marginEnd="15px"
+                android:layout_marginBottom="20px"
+                android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:hint="@string/hint_mass"
+                android:numeric="integer"
+                android:paddingStart="17px"
+                android:paddingTop="18px"
+                android:paddingBottom="19px"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="@color/gray_500" />
+
+            <TextView
+                android:id="@+id/txtnote"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="16px"
+                android:layout_marginTop="28px"
+                android:layout_marginEnd="16px"
+                android:text="If you are contacting us regards an appointment please mention the appointment ID "
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameGroup102"
+            android:layout_width="317dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="10px"
+            android:layout_marginTop="-80px"
+            android:layout_marginEnd="10px"
+            android:layout_marginBottom="20px">
+
+            <View
+                android:id="@+id/viewRectangle1"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="3px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/rectangle_bg_bluegray_600_radius_53" />
+
+            <TextView
+                android:id="@+id/Sent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="-70px"
+                android:layout_marginEnd="10px"
+                android:text="Sent"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
