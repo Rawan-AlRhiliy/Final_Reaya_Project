@@ -23,7 +23,6 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="300px"
-            android:layout_marginEnd="-10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"
             android:gravity="center_horizontal"
@@ -83,7 +82,6 @@
                     android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
                     android:ellipsize="end"
                     android:hint="@string/hint_City"
-                    android:numeric="integer"
                     android:paddingStart="17px"
                     android:paddingTop="18px"
                     android:paddingBottom="19px"
@@ -101,7 +99,6 @@
                     android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
                     android:ellipsize="end"
                     android:hint="@string/hint_Address"
-                    android:numeric="integer"
                     android:paddingStart="17px"
                     android:paddingTop="18px"
                     android:paddingBottom="19px"
@@ -119,7 +116,6 @@
                 android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
                 android:ellipsize="end"
                 android:hint="@string/hint_pass"
-                android:numeric="integer"
                 android:paddingStart="17px"
                 android:paddingBottom="19px"
                 android:singleLine="true"
@@ -135,7 +131,6 @@
                 android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
                 android:ellipsize="end"
                 android:hint="@string/hint_Confirm"
-                android:numeric="integer"
                 android:paddingStart="17px"
                 android:paddingBottom="19px"
                 android:singleLine="true"
@@ -143,7 +138,7 @@
 
         </LinearLayout>
 
-        <FrameLayout
+        <LinearLayout
             android:id="@+id/frameGroup102"
             android:layout_width="317dp"
             android:layout_height="87dp"
@@ -151,7 +146,8 @@
             android:layout_marginStart="10px"
             android:layout_marginTop="-80px"
             android:layout_marginEnd="10px"
-            android:layout_marginBottom="20px">
+            android:layout_marginBottom="20px"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/CreatAccount"
@@ -165,44 +161,32 @@
                 app:backgroundTint="@color/bluegray_600" />
 
             <LinearLayout
-                android:id="@+id/linearGroup103"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="40px"
-                android:layout_marginEnd="40px"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_marginLeft="60dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="246dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtDontHaveAnA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:gravity="center"
+                    android:text="Have an account? "
+                    android:textSize="17sp" />
 
-                    <TextView
-                        android:id="@+id/txtDontHaveAnA"
-                        android:layout_width="wrap_content"
-                        android:layout_height="34dp"
-                        android:layout_marginTop="50px"
-                        android:gravity="center"
-                        android:text="Have an account? "
-                        android:textSize="17sp" />
-
-                    <TextView
-                        android:id="@+id/txtDontHaveAnA3"
-                        android:layout_width="149dp"
-                        android:layout_height="34dp"
-                        android:layout_marginTop="50px"
-                        android:layout_weight="1"
-                        android:gravity="center|left"
-                        android:text="Sign In"
-                        android:textColor="@color/blue_900"
-                        android:textSize="17sp" />
-                </LinearLayout>
-
+                <TextView
+                    android:id="@+id/txtDontHaveAnA3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Sign In"
+                    android:textColor="@color/blue_900"
+                    android:textSize="17sp" />
             </LinearLayout>
-        </FrameLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

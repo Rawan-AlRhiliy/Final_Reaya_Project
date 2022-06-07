@@ -36,17 +36,18 @@ public class SignUpActivity2 extends AppCompatActivity {
         }else {
             gendervalue="Female";
         }
-        final EditText userId = findViewById(R.id.UserId);
-        final EditText city = findViewById(R.id.City);
-        final EditText address = findViewById(R.id.Address);
-        final EditText password = findViewById(R.id.PasswordC);
-        String value= userId.getText().toString();
-        int UserIdint=Integer.parseInt(value);
+
         Button submit = findViewById(R.id.CreatAccount);
         DAOPatient dao = new DAOPatient();
         String finalGendervalue = gendervalue;
         submit.setOnClickListener(view -> {
+            final EditText userId = findViewById(R.id.UserId);
+            final EditText city = findViewById(R.id.City);
+            final EditText address = findViewById(R.id.Address);
+            final EditText password = findViewById(R.id.PasswordC);
+            int UserIdint = Integer.parseInt(userId.getText().toString());
             Patient pat = new Patient(name,email,phone, finalGendervalue,birthday,UserIdint,city.getText().toString(),address.getText().toString(),password.getText().toString());
+
             dao.add(pat).addOnSuccessListener(suc->
             {
                 Toast.makeText(this,"Account Created Successfully", Toast.LENGTH_SHORT).show();
