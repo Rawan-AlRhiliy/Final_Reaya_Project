@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reaya_Project">
-        <activity android:name=".SignInActivity"/>
+        <activity android:name=".SignInActivity" />
         <activity android:name=".StartActivity" />
         <activity android:name=".SignUpActivity2" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SignUpActivity1" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".ScheduleActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ContactUsActivity" />
         <activity
-            android:name=".SignUpActivity1"
+            android:name=".ui.AppLogoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

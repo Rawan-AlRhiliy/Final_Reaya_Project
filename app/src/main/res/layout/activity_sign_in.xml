@@ -48,7 +48,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/userid_iqama"
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
                 android:layout_marginStart="17px"
@@ -66,36 +66,23 @@
                 android:textColorHint="@color/gray_500" />
 
             <EditText
-                android:id="@+id/etPassword"
+                android:id="@+id/Password"
                 android:layout_width="match_parent"
-                android:layout_height="39dp"
-                android:layout_marginStart="18px"
-                android:layout_marginTop="42px"
-                android:layout_marginEnd="14px"
+                android:layout_height="46dp"
+                android:layout_marginStart="17px"
+                android:layout_marginTop="95px"
+                android:layout_marginEnd="15px"
                 android:layout_marginBottom="20px"
                 android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
-                android:drawableEnd="@drawable/img_removeredeye"
-                android:drawablePadding="10px"
                 android:ellipsize="end"
                 android:hint="@string/hint_pass"
-                android:paddingStart="16px"
-                android:paddingTop="21px"
-                android:paddingEnd="17px"
-                android:paddingBottom="15px"
+                android:numeric="integer"
+                android:paddingStart="17px"
+                android:paddingTop="18px"
+                android:paddingBottom="19px"
                 android:singleLine="true"
-                android:text="@={signInVM.signInModel.etPasswordValue}"
                 android:textColorHint="@color/gray_500" />
 
-            <TextView
-                android:id="@+id/txtnote"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginStart="16px"
-                android:layout_marginTop="28px"
-                android:layout_marginEnd="16px"
-                android:text="Forgot Password?"
-                android:textSize="16sp" />
         </LinearLayout>
 
         <FrameLayout
@@ -109,13 +96,14 @@
             android:layout_marginBottom="20px">
 
             <Button
-                android:id="@+id/Sent"
+                android:id="@+id/login"
                 android:layout_width="300dp"
                 android:layout_height="41dp"
                 android:layout_gravity="center|top"
                 android:layout_marginTop="3px"
                 android:layout_marginBottom="10px"
                 android:background="@drawable/rectangle_bg_bluegray_600_radius_53"
+                android:onClick="move_home"
                 android:text="Sign In"
                 app:backgroundTint="@color/bluegray_600" />
 
@@ -125,6 +113,7 @@
                 android:layout_height="59dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="40px"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40px"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -152,6 +141,7 @@
                         android:layout_marginTop="50px"
                         android:layout_weight="1"
                         android:gravity="center|left"
+                        android:onClick="move_signup"
                         android:text="Sign Up"
                         android:textColor="@color/blue_900"
                         android:textSize="17sp" />

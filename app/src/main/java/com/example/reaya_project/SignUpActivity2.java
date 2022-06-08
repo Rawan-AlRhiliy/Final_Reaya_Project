@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -37,7 +38,7 @@ public class SignUpActivity2 extends AppCompatActivity {
             gendervalue="Female";
         }
 
-        Button submit = findViewById(R.id.CreatAccount);
+        Button submit = findViewById(R.id.send);
         DAOPatient dao = new DAOPatient();
         String finalGendervalue = gendervalue;
         submit.setOnClickListener(view -> {
@@ -48,6 +49,8 @@ public class SignUpActivity2 extends AppCompatActivity {
             int UserIdint = Integer.parseInt(userId.getText().toString());
             Patient pat = new Patient(name,email,phone, finalGendervalue,birthday,UserIdint,city.getText().toString(),address.getText().toString(),password.getText().toString());
 
+            /* I Will Remove this comment symbol but I put this because this makes an Error in my app
+
             dao.add(pat).addOnSuccessListener(suc->
             {
                 Toast.makeText(this,"Account Created Successfully", Toast.LENGTH_SHORT).show();
@@ -56,7 +59,13 @@ public class SignUpActivity2 extends AppCompatActivity {
             {
                 Toast.makeText(this,""+er.getMessage(), Toast.LENGTH_SHORT).show();
             });
-
+            */
+            Intent switchActivityIntent = new Intent(this, HomeActivity.class);
+            startActivity(switchActivityIntent);
         });
+    }
+    public void move_signin(View view){
+        Intent switchActivityIntent = new Intent(this, SignInActivity.class);
+        startActivity(switchActivityIntent);
     }
 }

@@ -5,11 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class SignUpActivity1 extends AppCompatActivity {
 
@@ -17,7 +15,7 @@ public class SignUpActivity1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up1);
-        final EditText name =(EditText) findViewById(R.id.Name);
+        final EditText name =(EditText) findViewById(R.id.userid_iqama);
         final EditText email = (EditText)findViewById(R.id.Email);
         final EditText phone = (EditText)findViewById(R.id.Phone);
         final Spinner gender= (Spinner) findViewById(R.id.Gender);
@@ -65,5 +63,9 @@ public class SignUpActivity1 extends AppCompatActivity {
         });*/
 
 
+    }
+    public void move_signin(View view){
+        Intent switchActivityIntent = new Intent(this, SignInActivity.class);
+        startActivity(switchActivityIntent);
     }
 }

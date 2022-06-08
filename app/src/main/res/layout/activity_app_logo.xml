@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context=".ui.AppLogoActivity">
     <FrameLayout
         android:id="@+id/frameLogo"
         android:layout_width="match_parent"
@@ -11,12 +12,11 @@
         android:background="@color/gray_50">
 
         <ImageView
-            android:id="@+id/logo_project"
-            android:layout_width="298dp"
-            android:layout_height="206dp"
+            android:id="@+id/imageView"
+            android:layout_width="256dp"
+            android:layout_height="158dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="201dp"
-            app:srcCompat="@drawable/img_microsoftteams" />
+            android:background="@drawable/img_microsoftteams" />
     </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

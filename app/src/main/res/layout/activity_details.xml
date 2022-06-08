@@ -94,20 +94,20 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/app_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="12345677ASS" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/app_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="24 July 2022 Sunday " />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/state"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="11dp"
@@ -147,7 +147,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/info3"
+                        android:id="@+id/service_provider"
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -157,7 +157,7 @@
                         android:text="Service provider : " />
 
                     <TextView
-                        android:id="@+id/info5"
+                        android:id="@+id/provider_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -167,7 +167,7 @@
                         android:text="Ahmed Al-rhiliy" />
 
                     <TextView
-                        android:id="@+id/info6"
+                        android:id="@+id/evaluation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -177,7 +177,7 @@
                         android:text="Evaluation :" />
 
                     <RatingBar
-                        android:id="@+id/ratingBar"
+                        android:id="@+id/rating_evaluation"
                         android:layout_width="193dp"
                         android:layout_height="46dp"
                         android:layout_marginLeft="60dp"
@@ -185,7 +185,7 @@
                         android:rating="5" />
 
                     <TextView
-                        android:id="@+id/info7"
+                        android:id="@+id/note"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
@@ -195,7 +195,7 @@
                         android:text="Notes :" />
 
                     <TextView
-                        android:id="@+id/info8"
+                        android:id="@+id/note_detail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
