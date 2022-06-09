@@ -31,10 +31,13 @@ public class HomeActivity extends AppCompatActivity {
 
     //--------------------------------------------------------------------------------
     public void move_appointments_record(View view){
-
+        Intent switchActivityIntent = new Intent(this, AppointmentsRecordActivity.class);
+        startActivity(switchActivityIntent);
     }
-    public void move_appointment_reservation(View view){
 
+    public void move_appointment_reservation(View view){
+        Intent switchActivityIntent = new Intent(this, AppointmentsReservationActivity.class);
+        startActivity(switchActivityIntent);
     }
 
     public void move_settings(View view){

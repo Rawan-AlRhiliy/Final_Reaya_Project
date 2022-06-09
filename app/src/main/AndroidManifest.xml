@@ -18,6 +18,8 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ContactUsActivity" />
+        <activity android:name=".AppointmentsRecordActivity" />
+        <activity android:name=".AppointmentsReservationActivity" />
         <activity
             android:name=".ui.AppLogoActivity"
             android:exported="true">
