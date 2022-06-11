@@ -42,6 +42,7 @@
             android:text="Card information: " />
 
         <EditText
+            android:id="@+id/CardN"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -58,6 +59,7 @@
             android:textColorHint="@color/gray_500" />
 
         <EditText
+            android:id="@+id/CardDate"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -65,7 +67,7 @@
             android:layout_marginBottom="20px"
             android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
             android:ellipsize="end"
-            android:hint="@string/hint_National"
+            android:hint="@string/hint_MM"
             android:paddingStart="17px"
             android:paddingTop="18px"
             android:paddingBottom="19px"
@@ -74,6 +76,7 @@
             tools:hint="@string/hint_MM" />
 
         <EditText
+            android:id="@+id/CardCvc"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -81,7 +84,7 @@
             android:layout_marginBottom="20px"
             android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
             android:ellipsize="end"
-            android:hint="@string/hint_National"
+            android:hint="@string/hint_CVC"
             android:numeric="integer"
             android:paddingStart="17px"
             android:paddingTop="18px"
@@ -91,7 +94,7 @@
             tools:hint="@string/hint_CVC" />
 
         <EditText
-            android:id="@+id/userid_iqama7"
+            android:id="@+id/CardName"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -99,7 +102,7 @@
             android:layout_marginBottom="20px"
             android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
             android:ellipsize="end"
-            android:hint="@string/hint_National"
+            android:hint="@string/hint_Full_name"
             android:paddingStart="17px"
             android:paddingTop="18px"
             android:paddingBottom="19px"
@@ -115,7 +118,6 @@
         android:layout_height="41dp"
         android:background="@drawable/rectangle_bg_bluegray_600_radius_53"
         android:hint="@string/hint_Card"
-        android:onClick="move_Home"
         android:text="pay"
         app:backgroundTint="@color/bluegray_600"
         app:layout_constraintBottom_toBottomOf="parent"
