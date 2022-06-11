@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_50"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="Payment Information"
+        android:textColor="@color/bluegray_900"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearRectangle27"
+        android:layout_width="333dp"
+        android:layout_height="370dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="200dp"
+            android:gravity="center|left"
+            android:text="Card information: " />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="95px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/hint_Card"
+            android:numeric="integer"
+            android:paddingStart="17px"
+            android:paddingTop="18px"
+            android:paddingBottom="19px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_500" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/hint_National"
+            android:paddingStart="17px"
+            android:paddingTop="18px"
+            android:paddingBottom="19px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_500"
+            tools:hint="@string/hint_MM" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/hint_National"
+            android:numeric="integer"
+            android:paddingStart="17px"
+            android:paddingTop="18px"
+            android:paddingBottom="19px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_500"
+            tools:hint="@string/hint_CVC" />
+
+        <EditText
+            android:id="@+id/userid_iqama7"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
+            android:ellipsize="end"
+            android:hint="@string/hint_National"
+            android:paddingStart="17px"
+            android:paddingTop="18px"
+            android:paddingBottom="19px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_500"
+            tools:hint="@string/hint_Full_name" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay2"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:background="@drawable/rectangle_bg_bluegray_600_radius_53"
+        android:hint="@string/hint_Card"
+        android:onClick="move_Home"
+        android:text="pay"
+        app:backgroundTint="@color/bluegray_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.917" />
+</androidx.constraintlayout.widget.ConstraintLayout>

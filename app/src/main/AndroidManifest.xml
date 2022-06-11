@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reaya_Project">
+        <activity android:name=".PaymentActivity"></activity>
         <activity android:name=".SignInActivity" />
         <activity android:name=".StartActivity" />
         <activity android:name=".SignUpActivity2" />

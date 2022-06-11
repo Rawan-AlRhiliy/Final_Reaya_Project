@@ -14,6 +14,13 @@
     <string name="hint_Address">Address</string>
     <string name="hint_Confirm">Confirm password</string>
     <string name="hint_Relative">Relative relation</string>
+    <string name="hint_Card">Card Number</string>
+    <string name="hint_MM">MM/YY</string>
+    <string name="hint_CVC">CVC</string>
+    <string name="hint_Full_name">Full Name</string>
+
+
+
 
     <string-array name="reporting">
         <item>help</item>
