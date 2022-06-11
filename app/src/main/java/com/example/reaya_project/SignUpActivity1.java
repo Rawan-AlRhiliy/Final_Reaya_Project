@@ -4,22 +4,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-public class SignUpActivity1 extends AppCompatActivity {
+import java.util.regex.Pattern;
 
+public class SignUpActivity1 extends AppCompatActivity {
+    private EditText name ;
+    private EditText email ;
+    private EditText phone;
+    private Spinner gender;
+    private EditText birthday ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up1);
-        final EditText name =(EditText) findViewById(R.id.userid_iqama);
-        final EditText email = (EditText)findViewById(R.id.Email);
-        final EditText phone = (EditText)findViewById(R.id.Phone);
-        final Spinner gender= (Spinner) findViewById(R.id.Gender);
-        final EditText birthday =(EditText) findViewById(R.id.Birthday);
+
+
 
 
         Button next = (Button) findViewById(R.id.NextC);
@@ -28,12 +33,44 @@ public class SignUpActivity1 extends AppCompatActivity {
                 {
                     public void onClick(View view)
                     {
+                        name =(EditText) findViewById(R.id.name);
+                        email = (EditText)findViewById(R.id.Email);
+                        phone = (EditText)findViewById(R.id.Phone);
+                        gender= (Spinner) findViewById(R.id.Gender);
+                        birthday =(EditText) findViewById(R.id.Birthday);
+
                         String names=name.getText().toString();
                         String emails=email.getText().toString();
                         String value= phone.getText().toString();
                         int phones=Integer.parseInt(value);
                         String selectedItem=gender.getSelectedItem().toString();
                         String birthdays= birthday.getText().toString();
+                        //validation2();
+                        if(names.isEmpty()){
+                            name.setError("Name is required");
+                            name.requestFocus();
+                            return;
+                        }
+                        if(emails.isEmpty()){
+                            email.setError("Email is required");
+                            email.requestFocus();
+                            return;
+                        }
+                        if(value.isEmpty()){
+                            phone.setError("Phone is required");
+                            phone.requestFocus();
+                            return;
+                        }
+                        if(birthdays.isEmpty()){
+                            birthday.setError("Birthday is required");
+                            birthday.requestFocus();
+                            return;
+                        }
+                        if(!Patterns.EMAIL_ADDRESS.matcher(emails).matches()){
+                            email.setError("Please provide a valid email !");
+                            email.requestFocus();
+                            return;
+                        }
 
                         Intent i = new Intent (SignUpActivity1.this, SignUpActivity2.class);
                         /*i.putExtra("name", names);
@@ -48,7 +85,11 @@ public class SignUpActivity1 extends AppCompatActivity {
                         extras.putString("gendernumber", selectedItem);
                         extras.putString("birthday", birthdays);
                         i.putExtras(extras);
+                        Log.e("myTag", "ERRROR");
+                        Log.d("myTag", "This is my message");
+                        System.out.println("End of page 1");
                         startActivity(i);
+
                     }
                 });
 
@@ -64,6 +105,7 @@ public class SignUpActivity1 extends AppCompatActivity {
 
 
     }
+
     public void move_signin(View view){
         Intent switchActivityIntent = new Intent(this, SignInActivity.class);
         startActivity(switchActivityIntent);

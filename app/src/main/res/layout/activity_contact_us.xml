@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/userid_iqama"
+                android:id="@+id/message"
                 android:layout_width="277dp"
                 android:layout_height="91dp"
                 android:layout_marginStart="17px"

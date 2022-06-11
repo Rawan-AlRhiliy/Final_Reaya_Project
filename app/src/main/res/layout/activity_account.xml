@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center_horizontal"
-        android:text="Account"
+        android:text="Profile Information"
         android:textColor="@color/bluegray_900"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearRectangle27"
@@ -53,8 +53,7 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="-230dp"
-                    android:text="Mohammed Al-Hazmi " />
+                    android:layout_marginLeft="-230dp" />
 
             </TableRow>
 
@@ -119,43 +118,37 @@
                             android:id="@+id/phone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="05591744723" />
+                            android:layout_marginTop="10dp" />
 
                         <TextView
                             android:id="@+id/gender"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="34dp"
-                            android:text="Male" />
+                            android:layout_marginTop="34dp" />
 
                         <TextView
                             android:id="@+id/birthday"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:text="1999-11-9 " />
+                            android:layout_marginTop="30dp" />
 
                         <TextView
                             android:id="@+id/city"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="28dp"
-                            android:text="Makkah" />
+                            android:layout_marginTop="28dp" />
 
                         <TextView
                             android:id="@+id/address"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="33dp"
-                            android:text="Al-khadraa street " />
+                            android:layout_marginTop="33dp" />
 
                         <TextView
                             android:id="@+id/userId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:text="1109653342" />
+                            android:layout_marginTop="30dp" />
 
                     </LinearLayout>
                 </FrameLayout>

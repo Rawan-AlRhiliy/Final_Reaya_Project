@@ -48,7 +48,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/userid_iqama"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
                 android:layout_marginStart="17px"
@@ -57,8 +57,7 @@
                 android:layout_marginBottom="20px"
                 android:background="@drawable/rectangle_bg_white_a700_border_gray_500_radius_10"
                 android:ellipsize="end"
-                android:hint="@string/hint_National"
-                android:numeric="integer"
+                android:hint="@string/hint_email"
                 android:paddingStart="17px"
                 android:paddingTop="18px"
                 android:paddingBottom="19px"
@@ -103,7 +102,6 @@
                 android:layout_marginTop="3px"
                 android:layout_marginBottom="10px"
                 android:background="@drawable/rectangle_bg_bluegray_600_radius_53"
-                android:onClick="move_home"
                 android:text="Sign In"
                 app:backgroundTint="@color/bluegray_600" />
 
