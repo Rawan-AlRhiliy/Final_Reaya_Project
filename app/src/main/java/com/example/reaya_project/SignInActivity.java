@@ -37,7 +37,7 @@ private FirebaseAuth mAuth;
             String passwords=password.getText().toString().trim();
 
             if(emails.isEmpty()){
-                email.setError("City is required");
+                email.setError("Email is required");
                 email.requestFocus();
                 return;
             }
@@ -67,7 +67,7 @@ private FirebaseAuth mAuth;
                                 Intent switchActivityIntent = new Intent(SignInActivity.this, HomeActivity.class);
                                 startActivity(switchActivityIntent);
                             }else{
-                                Toast.makeText(SignInActivity.this,"Failed to LogIn", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignInActivity.this,"Failed to SignIn", Toast.LENGTH_SHORT).show();
 
                             }
                         }

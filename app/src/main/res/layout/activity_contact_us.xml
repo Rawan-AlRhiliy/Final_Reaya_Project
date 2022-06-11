@@ -86,10 +86,10 @@
 
             <TextView
                 android:id="@+id/txtnote"
-                android:layout_width="301dp"
+                android:layout_width="312dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="16px"
+                android:layout_marginStart="20px"
                 android:layout_marginTop="28px"
                 android:layout_marginEnd="16px"
                 android:text="If you are contacting us regards an appointment please mention the appointment ID "
