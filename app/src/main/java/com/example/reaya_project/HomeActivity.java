@@ -22,7 +22,7 @@ private ImageView Iexit;
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(HomeActivity.this,SignInActivity.class));
+                startActivity(new Intent(HomeActivity.this,StartActivity.class));
             }
         });
 
