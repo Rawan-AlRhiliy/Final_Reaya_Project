@@ -42,7 +42,6 @@ public class SignUpActivity1 extends AppCompatActivity {
                         String names=name.getText().toString();
                         String emails=email.getText().toString();
                         String value= phone.getText().toString();
-                        int phones=Integer.parseInt(value);
                         String selectedItem=gender.getSelectedItem().toString();
                         String birthdays= birthday.getText().toString();
                         //validation2();
@@ -56,6 +55,11 @@ public class SignUpActivity1 extends AppCompatActivity {
                             email.requestFocus();
                             return;
                         }
+                        if(!Patterns.EMAIL_ADDRESS.matcher(emails).matches()){
+                            email.setError("Please provide a valid email !");
+                            email.requestFocus();
+                            return;
+                        }
                         if(value.isEmpty()){
                             phone.setError("Phone is required");
                             phone.requestFocus();
@@ -66,12 +70,8 @@ public class SignUpActivity1 extends AppCompatActivity {
                             birthday.requestFocus();
                             return;
                         }
-                        if(!Patterns.EMAIL_ADDRESS.matcher(emails).matches()){
-                            email.setError("Please provide a valid email !");
-                            email.requestFocus();
-                            return;
-                        }
 
+                        int phones=Integer.parseInt(value);
                         Intent i = new Intent (SignUpActivity1.this, SignUpActivity2.class);
                         /*i.putExtra("name", names);
                         i.putExtra("email", emails);

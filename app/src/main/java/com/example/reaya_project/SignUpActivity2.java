@@ -54,12 +54,12 @@ public class SignUpActivity2 extends AppCompatActivity {
         }
 
         Button submit = findViewById(R.id.send);
-        DAOPatient dao = new DAOPatient();
+        //DAOPatient dao = new DAOPatient();
         String finalGendervalue = gendervalue;
         submit.setOnClickListener(view -> {
             //-------------- this page information:------------
             userId = findViewById(R.id.UserId);
-            int UserIdint = Integer.parseInt(userId.getText().toString());
+
             city = findViewById(R.id.City);
             address = findViewById(R.id.Address);
             password = findViewById(R.id.PasswordC);
@@ -68,6 +68,12 @@ public class SignUpActivity2 extends AppCompatActivity {
             String Citys=city.getText().toString();
             String Addresss=address.getText().toString();
             String Passwords= password.getText().toString();
+            String UsrId= userId.getText().toString();
+            if(UsrId.isEmpty()){
+                userId.setError("A value is required");
+                userId.requestFocus();
+                return;
+            }
             if(Citys.isEmpty()){
                 city.setError("City is required");
                 city.requestFocus();
@@ -88,7 +94,7 @@ public class SignUpActivity2 extends AppCompatActivity {
                 password.requestFocus();
                 return;
             }
-
+            int UserIdint = Integer.parseInt(userId.getText().toString());
             mAuth.createUserWithEmailAndPassword(email,Passwords)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
