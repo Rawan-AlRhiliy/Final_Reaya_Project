@@ -36,8 +36,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
-                android:onClick="move_account_info"
-                app:srcCompat="@drawable/img_ellipse32" />
+                app:srcCompat="@drawable/exit" />
 
         </LinearLayout>
 
