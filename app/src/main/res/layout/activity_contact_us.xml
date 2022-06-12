@@ -76,7 +76,6 @@
                 android:ellipsize="end"
                 android:gravity="left"
                 android:hint="@string/hint_mass"
-                android:numeric="integer"
                 android:paddingStart="17px"
                 android:paddingTop="18px"
                 android:paddingBottom="19px"
