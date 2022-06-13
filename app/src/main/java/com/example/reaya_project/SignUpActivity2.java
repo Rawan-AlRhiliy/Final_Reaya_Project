@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity2 extends AppCompatActivity {
-    //Prevous page: name; email; phone; geneder; birthday;
+    //Previous page: name; email; phone; gender; birthday;
     //This page: userid; city; address; password;
     private EditText userId;
     private EditText city ;
@@ -36,7 +36,6 @@ public class SignUpActivity2 extends AppCompatActivity {
         int phone = extras.getInt("phone",0);
         String gender = extras.getString("gendernumber");
         String birthday = extras.getString("birthday");
-
 
         //values taken from prevous page
         /*Intent intent = getIntent();

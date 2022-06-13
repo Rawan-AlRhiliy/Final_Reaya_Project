@@ -31,7 +31,7 @@ public class AppointmentRecordAdapter extends RecyclerView.Adapter<AppointmentRe
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
         return new Viewholder(view);
     }
-
+//
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
         // to set data to textview and imageview of each card layout
