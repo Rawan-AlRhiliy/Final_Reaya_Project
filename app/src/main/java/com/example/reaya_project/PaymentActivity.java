@@ -14,7 +14,8 @@ public class PaymentActivity extends AppCompatActivity {
     private EditText cardC;
     private EditText cardName;
     private Button payment;
-    //pay2
+    //pay3
+    //pay4
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
